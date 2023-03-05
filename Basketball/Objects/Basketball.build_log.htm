@@ -1,0 +1,239 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Boris Vasilev, MEPHI, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\Users\lolfa\Desktop\Study\ARM\Projects\GAME\Basketball\Basketball.uvprojx
+Project File Date:  01/12/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_MDR32F9Qx.S...
+compiling system_MDR32F9Qx.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc\MDR32Fx.h(843): warning:  #1215-D: #warning directive: "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD_Pos will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD_Pos"
+      #warning "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD_Pos will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD_Pos"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc\MDR32Fx.h(856): warning:  #1215-D: #warning directive: "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD"
+      #warning "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD"
+RTE\Device\MDR1986BE91\system_MDR32F9Qx.c: 2 warnings, 0 errors
+compiling MDR32F9Qx_ebc.c...
+compiling MDR32F9Qx_iwdg.c...
+compiling MDR32F9Qx_power.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(87): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_DUccMode() moved to MDR32F9Qx_bkp.c as BKP_DUccMode() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_DUccMode() moved to MDR32F9Qx_bkp.c as BKP_DUccMode() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(108): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_DUccTrim() moved to MDR32F9Qx_bkp.c as BKP_DUccTrim() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_DUccTrim() moved to MDR32F9Qx_bkp.c as BKP_DUccTrim() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(129): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_DUccStandby() moved to MDR32F9Qx_bkp.c as BKP_EnterSTANDBYMode() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_DUccStandby() moved to MDR32F9Qx_bkp.c as BKP_EnterSTANDBYMode() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(145): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_EnterSTANDBYMode() moved to MDR32F9Qx_bkp.c as BKP_EnterSTANDBYMode() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_EnterSTANDBYMode() moved to MDR32F9Qx_bkp.c as BKP_EnterSTANDBYMode() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(162): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_SetFlagPOR() moved to MDR32F9Qx_bkp.c as BKP_SetFlagPOR() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_SetFlagPOR() moved to MDR32F9Qx_bkp.c as BKP_SetFlagPOR() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(178): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_FlagPORstatus() moved to MDR32F9Qx_bkp.c as BKP_FlagPORstatus() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_FlagPORstatus() moved to MDR32F9Qx_bkp.c as BKP_FlagPORstatus() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c(210): warning:  #1215-D: #warning directive: "Legacy v1.5.3: POWER_EnterSTOPMode() moved to MDR32F9Qx_bkp.c as BKP_EnterSTOPMode() and will be removed from MDR32F9Qx_power.c"
+      #warning "Legacy v1.5.3: POWER_EnterSTOPMode() moved to MDR32F9Qx_bkp.c as BKP_EnterSTOPMode() and will be removed from MDR32F9Qx_power.c"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c: 7 warnings, 0 errors
+compiling MDR32F9Qx_comp.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_comp.h(101): warning:  #1215-D: #warning directive: "Legacy v1.5.3: @ref COMP_CVRef_Range enum will be removed - use @ref COMP_CVRef_Scale enum instead"
+      #warning "Legacy v1.5.3: @ref COMP_CVRef_Range enum will be removed - use @ref COMP_CVRef_Scale enum instead"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_comp.h(138): warning:  #1215-D: #warning directive: "Legacy v1.5.3: COMP_CVREF_SCALE_x_div_32 will be replaced with correct CVR+CVRR values"
+      #warning "Legacy v1.5.3: COMP_CVREF_SCALE_x_div_32 will be replaced with correct CVR+CVRR values"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_comp.h(255): warning:  #1215-D: #warning directive: "Legacy v1.5.3: COMP_CVRefRange field of @ref COMP_CVRefInitTypeDef struct will be suppressed by @ref COMP_CVRefScale field and @ref COMP_CVRef_Scale enum. Also COMP_CVRefInit() COMP_CVRefStructInit() and COMP_CVRefScaleConfig() functionality will change according to these changes, and COMP_CVRefRangeConfig() will be removed"
+      #warning "Legacy v1.5.3: COMP_CVRefRange field of @ref COMP_CVRefInitTypeDef struct will be suppressed by @ref COMP_CVRefScale field and @ref COMP_CVRef_Scale enum. Also COMP_CVRefInit() COMP_CVRefStructInit() and COMP_CVRefScaleConfig() functionality will change according to these changes, and COMP_CVRefRangeConfig() will be removed"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_comp.h(307): warning:  #1215-D: #warning directive: "Legacy v1.5.3: COMP_CVRefRangeConfig() will be removed as suppressed by new COMP_CVRefRangeConfig() functionality (@ref COMP_CVRef_Range is suppressed by @ref COMP_CVRef_Scale)"
+      #warning "Legacy v1.5.3: COMP_CVRefRangeConfig() will be removed as suppressed by new COMP_CVRefRangeConfig() functionality (@ref COMP_CVRef_Range is suppressed by @ref COMP_CVRef_Scale)"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_comp.c: 4 warnings, 0 errors
+compiling MDR32F9Qx_dac.c...
+compiling MDR32F9Qx_i2c.c...
+compiling MDR32F9Qx_eeprom.c...
+compiling MDR32F9Qx_dma.c...
+compiling MDR32F9Qx_can.c...
+compiling MDR32F9Qx_bkp.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_bkp.h(249): warning:  #1215-D: #warning directive: "Legacy v1.5.3: BKP_RTC_Enable() will be removed and replaced with BKP_RTC_WorkPermit()"
+      #warning "Legacy v1.5.3: BKP_RTC_Enable() will be removed and replaced with BKP_RTC_WorkPermit()"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_bkp.c: 1 warning, 0 errors
+compiling MDR32F9Qx_adc.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_adc.h(217): warning:  #1215-D: #warning directive: "Legacy v1.5.3: ADC_SAMPLING_MODE_CICLIC_CONV will be removed and replaced with ADC_SAMPLING_MODE_CYCLIC_CONV"
+      #warning "Legacy v1.5.3: ADC_SAMPLING_MODE_CICLIC_CONV will be removed and replaced with ADC_SAMPLING_MODE_CYCLIC_CONV"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_adc.c: 1 warning, 0 errors
+compiling MDR32F9Qx_port.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_port.h(225): warning:  #1215-D: #warning directive: "Legacy v1.5.3: @ref BitAction enumeration (Bit_RESET, Bit_SET) will be removed. Use @ref BitStatus."
+      #warning "Legacy v1.5.3: @ref BitAction enumeration (Bit_RESET, Bit_SET) will be removed. Use @ref BitStatus."
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_port.h(286): warning:  #1215-D: #warning directive: "Legacy v1.5.3: BitAction enumeration (Bit_RESET, Bit_SET) will be removed. In PORT_WriteBit() function use @ref BitStatus instead of @ref BitAction"
+      #warning "Legacy v1.5.3: BitAction enumeration (Bit_RESET, Bit_SET) will be removed. In PORT_WriteBit() function use @ref BitStatus instead of @ref BitAction"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_port.c: 2 warnings, 0 errors
+compiling main.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc\MDR32Fx.h(843): warning:  #1215-D: #warning directive: "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD_Pos will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD_Pos"
+      #warning "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD_Pos will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD_Pos"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc\MDR32Fx.h(856): warning:  #1215-D: #warning directive: "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD"
+      #warning "Legacy v1.5.3: RST_CLK_PLL_CONTROL_PLL_CPU_PLD will be replaced by RST_CLK_PLL_CONTROL_PLL_CPU_RLD"
+lcd.h(75): warning:  #223-D: function "ReadCMD" declared implicitly
+  	while((ReadCMD(0))&((1<<7)|(1<<4)));
+lcd.h(76): warning:  #223-D: function "ReadCMD" declared implicitly
+  	while((ReadCMD(1))&((1<<7)|(1<<4)));
+lcd.h(66): warning:  #550-D: variable "Status"  was set but never used
+  	int Status = 0;
+cpu.h(15): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(640): warning:  #177-D: variable "yPos"  was declared but never referenced
+  	float yPos = (*obj).ball.y;
+main.c(641): warning:  #177-D: variable "xPos"  was declared but never referenced
+  	float xPos = (*obj).ball.x;
+main.c(940): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 9 warnings, 0 errors
+compiling MDR32F9Qx_rst_clk.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_rst_clk.c(37): warning:  #1215-D: #warning directive: "Legacy v1.5.3: Clock frequencies and timeouts will be removed from MDR32F9Qx_rst_clk.c. Use definitions in MDR32F9Qx_config.h"
+      #warning "Legacy v1.5.3: Clock frequencies and timeouts will be removed from MDR32F9Qx_rst_clk.c. Use definitions in MDR32F9Qx_config.h"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_rst_clk.c: 1 warning, 0 errors
+compiling MDR32F9Qx_uart.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_uart.h(47): warning:  #1215-D: #warning directive: "Legacy v1.5.3: BaudRateStatus enumeration is deprecated. Use @ref ErrorStatus instead"
+      #warning "Legacy v1.5.3: BaudRateStatus enumeration is deprecated. Use @ref ErrorStatus instead"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_uart.c: 1 warning, 0 errors
+compiling MDR32F9Qx_ssp.c...
+compiling MDR32F9Qx_timer.c...
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_timer.h(91): warning:  #1215-D: #warning directive: "Legacy v1.5.3: TIMER_EvSrc_None is deprecated and will be removed, use TIMER_EvSrc_TIM_CLK instead"
+      #warning "Legacy v1.5.3: TIMER_EvSrc_None is deprecated and will be removed, use TIMER_EvSrc_TIM_CLK instead"
+C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_timer.c: 1 warning, 0 errors
+linking...
+Program Size: Code=15864 RO-data=512 RW-data=456 ZI-data=18168  
+".\Objects\Basketball.axf" - 0 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                https://ic.milandr.ru/soft/Keil.MDR1986BExx.2.0.3.pack
+                Keil.MDR1986BExx.2.0.3
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: UART Version: 2.0.3
+   * Component: TIMER Version: 2.0.3
+   * Component: SSP Version: 2.0.3
+   * Component: RST_CLK Version: 2.0.3
+   * Component: POWER Version: 2.0.3
+   * Component: PORT Version: 2.0.3
+   * Component: IWDG Version: 2.0.3
+   * Component: I2C Version: 2.0.3
+   * Component: EEPROM Version: 2.0.3
+   * Component: EBC Version: 2.0.3
+   * Component: DMA Version: 2.0.3
+   * Component: DAC Version: 2.0.3
+   * Component: COMP Version: 2.0.3
+   * Component: CAN Version: 2.0.3
+   * Component: BKP Version: 2.0.3
+   * Component: ADC Version: 2.0.3
+   * Component: Startup Version: 2.0.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR1986BE91
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\CoreSupport\CM3
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc
+  C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Drivers:UART:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_uart.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_uart.h
+
+   * Component: Keil::Drivers:TIMER:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_timer.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_timer.c
+
+   * Component: Keil::Drivers:SSP:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_ssp.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_ssp.c
+
+   * Component: Keil::Drivers:RST_CLK:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_rst_clk.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_rst_clk.c
+
+   * Component: Keil::Drivers:POWER:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_power.h
+
+   * Component: Keil::Drivers:PORT:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_port.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_port.h
+
+   * Component: Keil::Drivers:IWDG:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_iwdg.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_iwdg.c
+
+   * Component: Keil::Drivers:I2C:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_i2c.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_i2c.c
+
+   * Component: Keil::Drivers:EEPROM:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_eeprom.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_eeprom.c
+
+   * Component: Keil::Drivers:EBC:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_ebc.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_ebc.c
+
+   * Component: Keil::Drivers:DMA:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_dma.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_dma.c
+
+   * Component: Keil::Drivers:DAC:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_dac.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_dac.c
+
+   * Component: Keil::Drivers:COMP:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_comp.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_comp.c
+
+   * Component: Keil::Drivers:CAN:2.0.3
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_can.h
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_can.c
+
+   * Component: Keil::Drivers:BKP:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_bkp.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_bkp.h
+
+   * Component: Keil::Drivers:ADC:2.0.3
+      Source file:   Libraries\SPL\MDR32Fx\src\MDR32F9Qx_adc.c
+      Include file:  Libraries\SPL\MDR32Fx\inc\MDR32F9Qx_adc.h
+
+   * Component: Keil::Device:Startup:2.0.3
+      Source file:   Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\startup\arm\startup_MDR32F9Qx.S
+      Include file:  Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\startup\arm\system_MDR32F9Qx.h
+      Include file:  Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\inc\MDR32Fx.h
+      Include file:  Libraries\CMSIS\MDR32Fx\CoreSupport\CM3\core_cm3.h
+      Source file:   Libraries\CMSIS\MDR32Fx\DeviceSupport\MDR1986VE9x\startup\arm\system_MDR32F9Qx.c
+      Include file:  Libraries\SPL\MDR32Fx\MDR32F9Qx_config.h
+      Include file:  Libraries\SPL\MDR32Fx\inc\IRQ_Handler_Template\MDR32F9Qx_IT.h
+      Source file:   Libraries\SPL\MDR32Fx\src\IRQ_Handler_Template\MDR32F9Qx_IT.c
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
