@@ -1,0 +1,1362 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.InitLcd) refers to main.o(i.ReadCMD) for ReadCMD
+    main.o(i.InitLcd) refers to main.o(i.LCDON) for LCDON
+    main.o(i.LCDON) refers to main.o(i.WriteCMD) for WriteCMD
+    main.o(i.ScreenUpdate) refers to main.o(i.SetAddr) for SetAddr
+    main.o(i.ScreenUpdate) refers to main.o(i.SetPage) for SetPage
+    main.o(i.ScreenUpdate) refers to main.o(i.Send_Data) for Send_Data
+    main.o(i.SetAddr) refers to main.o(i.WriteCMD) for WriteCMD
+    main.o(i.SetPage) refers to main.o(i.WriteCMD) for WriteCMD
+    main.o(i.StartScreen) refers to main.o(i.drawScuare) for drawScuare
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.mixLayer) for mixLayer
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.drawGameField) for drawGameField
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.showScore) for showScore
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.showLevel) for showLevel
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.showLines) for showLines
+    main.o(i.Timer1_IRQHandler) refers to main.o(i.ScreenUpdate) for ScreenUpdate
+    main.o(i.Timer1_IRQHandler) refers to main.o(.data) for button_CENTER_pressed_cnt
+    main.o(i.Timer1_IRQHandler) refers to main.o(.bss) for mixedLayer
+    main.o(i.Timer3_IRQHandler) refers to main.o(i.movDown) for movDown
+    main.o(i.Timer3_IRQHandler) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.Timer3_IRQHandler) refers to main.o(i.placeFigure) for placeFigure
+    main.o(i.Timer3_IRQHandler) refers to main.o(.data) for drop_flag
+    main.o(i.Timer3_IRQHandler) refers to main.o(.bss) for ActiveFig
+    main.o(i.checkLevel) refers to main.o(.data) for startlevell23
+    main.o(i.checkTSpin) refers to main.o(i.max) for max
+    main.o(i.checkTetris) refers to main.o(.data) for score123
+    main.o(i.clear_lcd) refers to main.o(i.SetPage) for SetPage
+    main.o(i.clear_lcd) refers to main.o(i.Send_Data) for Send_Data
+    main.o(i.drawGameField) refers to main.o(i.drawPrimitive) for drawPrimitive
+    main.o(i.drawGameField) refers to main.o(i.clearPrimitive) for clearPrimitive
+    main.o(i.drawGameField) refers to main.o(.data) for primitive
+    main.o(i.drawOneFig) refers to main.o(i.clearPrimitive) for clearPrimitive
+    main.o(i.drawOneFig) refers to main.o(i.max) for max
+    main.o(i.drawOneFig) refers to main.o(i.drawPrimitive) for drawPrimitive
+    main.o(i.drawOneFig) refers to main.o(.data) for primitive
+    main.o(i.generateFigure) refers to main.o(i.initFigure_model) for initFigure_model
+    main.o(i.generateFigure) refers to main.o(.data) for fig_I
+    main.o(i.initFigure_model) refers to main.o(i.maxRight) for maxRight
+    main.o(i.initFigure_model) refers to main.o(i.minLeft) for minLeft
+    main.o(i.initFigure_model) refers to main.o(i.minBottom) for minBottom
+    main.o(i.initFigure_model) refers to main.o(i.maxTop) for maxTop
+    main.o(i.load_pic) refers to main.o(i.SetAddr) for SetAddr
+    main.o(i.load_pic) refers to main.o(i.SetPage) for SetPage
+    main.o(i.load_pic) refers to main.o(i.Send_Data) for Send_Data
+    main.o(i.main) refers to main.o(i.initPerefirial) for initPerefirial
+    main.o(i.main) refers to main.o(i.initButtons) for initButtons
+    main.o(i.main) refers to main.o(i.InitLcd) for InitLcd
+    main.o(i.main) refers to main.o(i.SetPage) for SetPage
+    main.o(i.main) refers to main.o(i.SetAddr) for SetAddr
+    main.o(i.main) refers to main.o(i.clear_lcd) for clear_lcd
+    main.o(i.main) refers to main.o(i.initTimer_1) for initTimer_1
+    main.o(i.main) refers to main.o(i.initTimer_2) for initTimer_2
+    main.o(i.main) refers to main.o(i.timer3Off) for timer3Off
+    main.o(i.main) refers to main.o(i.picToArray_full) for picToArray_full
+    main.o(i.main) refers to main.o(i.picToArray_half) for picToArray_half
+    main.o(i.main) refers to main.o(i.drawScuare) for drawScuare
+    main.o(i.main) refers to main.o(i.clearScuare) for clearScuare
+    main.o(i.main) refers to main.o(i.showLevel) for showLevel
+    main.o(i.main) refers to main.o(.bss) for screen
+    main.o(i.main) refers to main.o(.data) for startscreen_1
+    main.o(i.main) refers to main.o(i.StartScreen) for StartScreen
+    main.o(i.main) refers to main.o(i.generateFigure) for generateFigure
+    main.o(i.main) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.main) refers to main.o(i.drawOneFig) for drawOneFig
+    main.o(i.main) refers to main.o(i.initFigure_coord) for initFigure_coord
+    main.o(i.main) refers to main.o(i.clear_array) for clear_array
+    main.o(i.main) refers to main.o(i.checkLevel) for checkLevel
+    main.o(i.main) refers to main.o(i.levelToFreq) for levelToFreq
+    main.o(i.main) refers to main.o(i.initTimer_3) for initTimer_3
+    main.o(i.main) refers to main.o(i.movLeft) for movLeft
+    main.o(i.main) refers to main.o(i.placeFigure) for placeFigure
+    main.o(i.main) refers to main.o(i.movRight) for movRight
+    main.o(i.main) refers to main.o(i.movDown) for movDown
+    main.o(i.main) refers to main.o(i.movRotate) for movRotate
+    main.o(i.main) refers to main.o(i.saveFigure) for saveFigure
+    main.o(i.main) refers to main.o(i.initFigure_model) for initFigure_model
+    main.o(i.main) refers to main.o(i.checkTetris) for checkTetris
+    main.o(i.main) refers to main.o(i.deleteLines) for deleteLines
+    main.o(i.main) refers to main.o(i.isCollision) for isCollision
+    main.o(i.main) refers to main.o(i.showScore) for showScore
+    main.o(i.main) refers to main.o(i.showLines) for showLines
+    main.o(i.main) refers to main.o(i.ScreenUpdate) for ScreenUpdate
+    main.o(i.main) refers to main.o(i.timer1Off) for timer1Off
+    main.o(i.movDown) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.movDown) refers to main.o(i.isCollision) for isCollision
+    main.o(i.movLeft) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.movLeft) refers to main.o(i.isCollision) for isCollision
+    main.o(i.movRight) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.movRight) refers to main.o(i.isCollision) for isCollision
+    main.o(i.movRotate) refers to main.o(i.rotateArray_CW) for rotateArray_CW
+    main.o(i.movRotate) refers to main.o(i.maxRight) for maxRight
+    main.o(i.movRotate) refers to main.o(i.minLeft) for minLeft
+    main.o(i.movRotate) refers to main.o(i.minBottom) for minBottom
+    main.o(i.movRotate) refers to main.o(i.maxTop) for maxTop
+    main.o(i.movRotate) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    main.o(i.movRotate) refers to main.o(i.isCollision) for isCollision
+    main.o(i.movRotate) refers to main.o(i.rotateArray_ACW) for rotateArray_ACW
+    main.o(i.picToArray_full) refers to main.o(i.min) for min
+    main.o(i.picToArray_half) refers to main.o(i.min) for min
+    main.o(i.rotateArray_ACW) refers to main.o(i.max) for max
+    main.o(i.rotateArray_CW) refers to main.o(i.max) for max
+    main.o(i.showLevel) refers to main.o(i.drawNum) for drawNum
+    main.o(i.showLevel) refers to main.o(i.drawScuare) for drawScuare
+    main.o(i.showLevel) refers to main.o(.data) for num_0
+    main.o(i.showLines) refers to main.o(i.drawNum) for drawNum
+    main.o(i.showLines) refers to main.o(i.drawScuare) for drawScuare
+    main.o(i.showLines) refers to main.o(.data) for num_0
+    main.o(i.showScore) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    main.o(i.showScore) refers to main.o(i.drawNum) for drawNum
+    main.o(i.showScore) refers to main.o(i.drawScuare) for drawScuare
+    main.o(i.showScore) refers to main.o(.data) for num_0
+    main.o(i.start_line) refers to main.o(i.WriteCMD) for WriteCMD
+    startup_mdr32f9qx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9qx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9qx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9qx.o(RESET) refers to startup_mdr32f9qx.o(STACK) for __initial_sp
+    startup_mdr32f9qx.o(RESET) refers to startup_mdr32f9qx.o(.text) for Reset_Handler
+    startup_mdr32f9qx.o(RESET) refers to main.o(i.Timer1_IRQHandler) for Timer1_IRQHandler
+    startup_mdr32f9qx.o(RESET) refers to main.o(i.Timer2_IRQHandler) for Timer2_IRQHandler
+    startup_mdr32f9qx.o(RESET) refers to main.o(i.Timer3_IRQHandler) for Timer3_IRQHandler
+    startup_mdr32f9qx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mdr32f9qx.o(.text) refers to system_mdr32f9qx.o(i.SystemInit) for SystemInit
+    startup_mdr32f9qx.o(.text) refers to __main.o(!!!main) for __main
+    startup_mdr32f9qx.o(.text) refers to startup_mdr32f9qx.o(HEAP) for Heap_Mem
+    startup_mdr32f9qx.o(.text) refers to startup_mdr32f9qx.o(STACK) for Stack_Mem
+    system_mdr32f9qx.o(i.SystemCoreClockUpdate) refers to system_mdr32f9qx.o(.data) for SystemCoreClock
+    system_mdr32f9qx.o(i.SystemInit) refers to system_mdr32f9qx.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    mdr32f9qx_adc.o(i.ADC_GetFlagStatus) refers to mdr32f9qx_adc.o(i.ADC_GetStatus) for ADC_GetStatus
+    mdr32f9qx_adc.o(i.ADC_GetITStatus) refers to mdr32f9qx_adc.o(i.ADC_GetStatus) for ADC_GetStatus
+    mdr32f9qx_can.o(i.CAN_GetRawReceivedData) refers to mdr32f9qx_can.o(i.CAN_ReadBufferSFR) for CAN_ReadBufferSFR
+    mdr32f9qx_can.o(i.CAN_GetReceivedData) refers to mdr32f9qx_can.o(i.CAN_ReadBufferSFR) for CAN_ReadBufferSFR
+    mdr32f9qx_comp.o(i.COMP_GetFlagStatus) refers to mdr32f9qx_comp.o(i.COMP_GetStatus) for COMP_GetStatus
+    mdr32f9qx_dma.o(i.DMA_CtrlInit) refers to mdr32f9qx_dma.o(i.DMA_CtrlDataInit) for DMA_CtrlDataInit
+    mdr32f9qx_dma.o(i.DMA_CtrlInit) refers to mdr32f9qx_dma.o(.bss) for DMA_ControlTable
+    mdr32f9qx_dma.o(i.DMA_Init) refers to mdr32f9qx_dma.o(i.DMA_CtrlDataInit) for DMA_CtrlDataInit
+    mdr32f9qx_dma.o(i.DMA_Init) refers to mdr32f9qx_dma.o(.bss) for DMA_ControlTable
+    mdr32f9qx_dma.o(i.DMA_SG_CtrlInit) refers to mdr32f9qx_dma.o(i.DMA_CtrlDataInit) for DMA_CtrlDataInit
+    mdr32f9qx_dma.o(i.DMA_SG_Init) refers to mdr32f9qx_dma.o(i.DMA_CtrlDataInit) for DMA_CtrlDataInit
+    mdr32f9qx_dma.o(i.DMA_SG_Init) refers to mdr32f9qx_dma.o(.bss) for DMA_ControlTable
+    mdr32f9qx_i2c.o(i.I2C_CheckEvent) refers to mdr32f9qx_i2c.o(i.I2C_GetLastEvent) for I2C_GetLastEvent
+    mdr32f9qx_i2c.o(i.I2C_GetFlagStatus) refers to mdr32f9qx_i2c.o(i.I2C_GetLastEvent) for I2C_GetLastEvent
+    mdr32f9qx_rst_clk.o(i.RST_CLK_CPU_PLLstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_DeInit) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_WarmDeInit) for RST_CLK_WarmDeInit
+    mdr32f9qx_rst_clk.o(i.RST_CLK_DeInit) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_PCLKcmd) for RST_CLK_PCLKcmd
+    mdr32f9qx_rst_clk.o(i.RST_CLK_HSEstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_HSIstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_LSEstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_LSIstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_USB_PLLstatus) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus) for RST_CLK_GetFlagStatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_WarmDeInit) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_HSIcmd) for RST_CLK_HSIcmd
+    mdr32f9qx_rst_clk.o(i.RST_CLK_WarmDeInit) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_HSIstatus) for RST_CLK_HSIstatus
+    mdr32f9qx_rst_clk.o(i.RST_CLK_WarmDeInit) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_CPUclkSelection) for RST_CLK_CPUclkSelection
+    mdr32f9qx_uart.o(i.UART_Init) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetClocksFreq) for RST_CLK_GetClocksFreq
+    mdr32f9qx_uart.o(i.UART_IrDAConfig) refers to mdr32f9qx_rst_clk.o(i.RST_CLK_GetClocksFreq) for RST_CLK_GetClocksFreq
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_mdr32f9qx.o(.text) for __user_initial_stackheap
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(i.WriteData), (64 bytes).
+    Removing main.o(i.checkTSpin), (212 bytes).
+    Removing main.o(i.clearArray), (38 bytes).
+    Removing main.o(i.cpu_freq), (100 bytes).
+    Removing main.o(i.fillArray), (70 bytes).
+    Removing main.o(i.fillArray_primitiv), (70 bytes).
+    Removing main.o(i.load_pic), (88 bytes).
+    Removing main.o(i.start_line), (22 bytes).
+    Removing main.o(i.test_button), (76 bytes).
+    Removing main.o(i.timer2Off), (28 bytes).
+    Removing system_mdr32f9qx.o(.rev16_text), (4 bytes).
+    Removing system_mdr32f9qx.o(.revsh_text), (4 bytes).
+    Removing system_mdr32f9qx.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_adc.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_adc.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_adc.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_ChannelSwithingConfig), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_ClearOutOfRangeFlag), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_ClearOverwriteFlag), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_Cmd), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_GetFlagStatus), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_GetITStatus), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_GetResult), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_GetStatus), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_ITConfig), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_Init), (92 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_LevelsConfig), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_OperationModeConfig), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_SamplingModeConfig), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_SetChannel), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_SetChannels), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_SetHighLevel), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_SetLowLevel), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC1_Start), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_ChannelSwithingConfig), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_ClearOutOfRangeFlag), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_ClearOverwriteFlag), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_Cmd), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_GetFlagStatus), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_GetITStatus), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_GetResult), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_GetStatus), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_ITConfig), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_Init), (80 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_LevelsConfig), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_OperationModeConfig), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_SamplingModeConfig), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_SetChannel), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_SetChannels), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_SetHighLevel), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_SetLowLevel), (12 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC2_Start), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_DeInit), (44 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_GetFlagStatus), (22 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_GetITStatus), (28 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_GetStatus), (20 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_ITConfig), (52 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_Init), (64 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_SetTrim), (24 bytes).
+    Removing mdr32f9qx_adc.o(i.ADC_StructInit), (18 bytes).
+    Removing mdr32f9qx_adc.o(i.ADCx_StructInit), (28 bytes).
+    Removing mdr32f9qx_bkp.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_bkp.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_bkp.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_DUccMode), (24 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_DUccTrim), (24 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_DeInit), (76 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_EnterSTANDBYMode), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_EnterSTOPMode), (48 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_FlagPORstatus), (16 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_JTAGA_CMD), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_JTAGB_CMD), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_Calibration), (28 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_ClearFlagStatus), (20 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_GetCounter), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_GetDivider), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_GetFlagStatus), (24 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_ITConfig), (32 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_Reset), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_SetAlarm), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_SetCounter), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_SetPrescaler), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_WaitForUpdate), (16 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTC_WorkPermit), (12 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_RTCclkSource), (24 bytes).
+    Removing mdr32f9qx_bkp.o(i.BKP_SetFlagPOR), (12 bytes).
+    Removing mdr32f9qx_can.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_can.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_can.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_BRGInit), (56 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_BufferRelease), (18 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_Cmd), (20 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_DeInit), (42 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_FilterInit), (26 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetBufferStatus), (12 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetDisabledBuffer), (30 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetEmptyTransferBuffer), (30 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetITState), (16 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetRawReceivedData), (128 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetReceivedData), (46 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetRx), (8 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetRxITStatus), (30 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetStatus), (6 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_GetTxITStatus), (30 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_ITClearErrorPendingBit), (8 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_ITClearRxTxPendingBit), (38 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_ITConfig), (18 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_Init), (98 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_RTRReply), (82 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_ReadBufferSFR), (14 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_Receive), (22 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_RxITConfig), (22 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_SendRTR), (72 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_StructInit), (38 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_Transmit), (96 bytes).
+    Removing mdr32f9qx_can.o(i.CAN_TxITConfig), (22 bytes).
+    Removing mdr32f9qx_comp.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_comp.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_comp.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefCmd), (28 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefInit), (32 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefRangeConfig), (20 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefScaleConfig), (24 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefSourceConfig), (20 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_CVRefStructInit), (10 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_Cmd), (28 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_DeInit), (16 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_GetCfgFlagStatus), (24 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_GetFlagStatus), (22 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_GetResultLatch), (12 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_GetStatus), (12 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_ITConfig), (28 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_Init), (32 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_MInpSourceConfig), (20 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_OutInversionConfig), (20 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_PInpSourceConfig), (20 bytes).
+    Removing mdr32f9qx_comp.o(i.COMP_StructInit), (10 bytes).
+    Removing mdr32f9qx_dac.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_dac.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_dac.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC1_Cmd), (28 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC1_GetData), (12 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC1_Init), (20 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC1_SetData), (12 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC2_Cmd), (28 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC2_GetData), (12 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC2_Init), (20 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC2_SetData), (12 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC_DeInit), (16 bytes).
+    Removing mdr32f9qx_dac.o(i.DAC_Init), (28 bytes).
+    Removing mdr32f9qx_dma.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_dma.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_dma.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_ClearError), (12 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_Cmd), (28 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_CtrlDataInit), (108 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_CtrlInit), (52 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_DeInit), (68 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_GetCurrTransferCounter), (40 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_GetFlagStatus), (172 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_Init), (148 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_Request), (16 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_SG_CtrlInit), (20 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_SG_Init), (164 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_SG_StructInit), (18 bytes).
+    Removing mdr32f9qx_dma.o(i.DMA_StructInit), (16 bytes).
+    Removing mdr32f9qx_dma.o(.bss), (1024 bytes).
+    Removing mdr32f9qx_ebc.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_ebc.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_ebc.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_CalcNandCycles), (60 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_CalcWaitStates), (72 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_DeInit), (16 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_GetBusyStatus), (24 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_Init), (64 bytes).
+    Removing mdr32f9qx_ebc.o(i.EBC_StructInit), (24 bytes).
+    Removing mdr32f9qx_eeprom.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_eeprom.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_eeprom.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_eeprom.o(EXECUTABLE_MEMORY_SECTION), (852 bytes).
+    Removing mdr32f9qx_eeprom.o(i.EEPROM_GetLatency), (16 bytes).
+    Removing mdr32f9qx_eeprom.o(i.EEPROM_SetLatency), (12 bytes).
+    Removing mdr32f9qx_i2c.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_i2c.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_i2c.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_CheckEvent), (24 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_ClearITPendingBit), (20 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_Cmd), (28 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_DeInit), (24 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_GetFlagStatus), (22 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_GetITStatus), (24 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_GetLastEvent), (24 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_GetReceivedData), (12 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_ITConfig), (28 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_Init), (44 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_Send7bitAddress), (20 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_SendByte), (16 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_SendSTOP), (12 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_StartReceiveData), (16 bytes).
+    Removing mdr32f9qx_i2c.o(i.I2C_StructInit), (10 bytes).
+    Removing mdr32f9qx_iwdg.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_iwdg.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_iwdg.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_Enable), (16 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_GetFlagStatus), (24 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_GetPrescaler), (12 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_GetReload), (16 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_ReloadCounter), (16 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_SetPrescaler), (12 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_SetReload), (12 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_WriteAccessDisable), (12 bytes).
+    Removing mdr32f9qx_iwdg.o(i.IWDG_WriteAccessEnable), (16 bytes).
+    Removing mdr32f9qx_port.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_port.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_port.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_DeInit), (20 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_Init), (456 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_ReadInputData), (6 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_ReadInputDataBit), (16 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_ResetBits), (28 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_SetBits), (28 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_StructInit), (28 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_Write), (24 bytes).
+    Removing mdr32f9qx_port.o(i.PORT_WriteBit), (52 bytes).
+    Removing mdr32f9qx_power.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_power.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_power.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_ClearFlag), (16 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_DUccMode), (24 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_DUccStandby), (12 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_DUccTrim), (24 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_DeInit), (12 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_EnterSTANDBYMode), (12 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_EnterSTOPMode), (48 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_FlagPORstatus), (16 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_GetFlagStatus), (24 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_PVBDlevelConfig), (28 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_PVD_INVconfig), (32 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_PVD_ITconfig), (32 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_PVDenable), (12 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_PVDlevelConfig), (28 bytes).
+    Removing mdr32f9qx_power.o(i.POWER_SetFlagPOR), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_rst_clk.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_rst_clk.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_ADCclkEnable), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_ADCclkPrescaler), (24 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_ADCclkSelection), (20 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPU_PLLcmd), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPU_PLLconfig), (64 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPU_PLLstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPU_PLLuse), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPUclkPrescaler), (24 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPUclkSelection), (20 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_CPUclkSelectionC1), (20 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_DeInit), (44 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_GetClocksFreq), (628 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_GetFlagStatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSEclkPrescaler), (20 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSEconfig), (60 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSEstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSIadjust), (24 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSIclkPrescaler), (24 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSIcmd), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_HSIstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_LSEconfig), (60 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_LSEstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_LSIadjust), (24 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_LSIcmd), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_LSIstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_PCLKcmd), (32 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_RTC_HSEclkEnable), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_RTC_HSIclkEnable), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USB_PLLcmd), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USB_PLLconfig), (64 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USB_PLLstatus), (52 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USB_PLLuse), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USBclkEnable), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_USBclkPrescaler), (12 bytes).
+    Removing mdr32f9qx_rst_clk.o(i.RST_CLK_WarmDeInit), (116 bytes).
+    Removing mdr32f9qx_ssp.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_ssp.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_ssp.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_BRGInit), (60 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_ClearITPendingBit), (8 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_Cmd), (24 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_DMACmd), (24 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_DeInit), (18 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_GetFlagStatus), (16 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_GetITStatus), (16 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_GetITStatusMasked), (16 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_ITConfig), (18 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_Init), (38 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_ReceiveData), (8 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_SendData), (4 bytes).
+    Removing mdr32f9qx_ssp.o(i.SSP_StructInit), (28 bytes).
+    Removing mdr32f9qx_timer.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_timer.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_timer.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_BRGInit), (84 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_BRKPolarityConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnBRKResetConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnCCR1_Cmd), (30 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnCCR1_EventSourceConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnCapturePrescalerConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnCompare1Config), (32 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnCompareConfig), (32 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnETRResetConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnETR_Cmd), (30 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnEventSourceConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnFilterConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnInit), (70 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnNOutConfig), (36 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnNOutModeConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnNOutPolarityConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnNOutSourceConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutConfig), (34 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutDTGConfig), (20 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutInit), (66 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutModeConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutPolarityConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutSourceConfig), (26 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnOutStructInit), (22 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnREFFormatConfig), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ChnStructInit), (28 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ClearFlag), (6 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_Cmd), (20 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_CntAutoreloadConfig), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_CntEventSourceConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_CntInit), (54 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_CntStructInit), (28 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_CounterModeConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_DMACmd), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_DeInit), (68 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ETRFilterConfig), (16 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ETRInputConfig), (22 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ETRPolarityConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ETRPrescalerConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_FilterSamplingConfig), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetChnCapture), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetChnCapture1), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetChnWriteComplete), (28 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetCntAutoreload), (8 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetCntPrescaler), (8 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetCntWriteComplete), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetCounter), (8 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetCounterDirection), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetFlagStatus), (16 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetITStatus), (24 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_GetStatus), (6 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_ITConfig), (18 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetChnCompare), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetChnCompare1), (14 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetCntAutoreload), (4 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetCntPrescaler), (4 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetCounter), (4 bytes).
+    Removing mdr32f9qx_timer.o(i.TIMER_SetCounterDirection), (14 bytes).
+    Removing mdr32f9qx_uart.o(.rev16_text), (4 bytes).
+    Removing mdr32f9qx_uart.o(.revsh_text), (4 bytes).
+    Removing mdr32f9qx_uart.o(.rrx_text), (6 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_BRGInit), (60 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_BreakLine), (24 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_ClearITPendingBit), (8 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_Cmd), (24 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_DMACmd), (24 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_DMAConfig), (8 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_DeInit), (38 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_GetFlagStatus), (16 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_GetITStatus), (18 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_GetITStatusMasked), (16 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_ITConfig), (18 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_Init), (180 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_IrDACmd), (24 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_IrDAConfig), (40 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_ReceiveData), (8 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_SendData), (4 bytes).
+    Removing mdr32f9qx_uart.o(i.UART_StructInit), (24 bytes).
+
+380 unused section(s) (total 12674 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/dclz77c.s                  0x00000000   Number         0  __dclz77c.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_adc.c 0x00000000   Number         0  mdr32f9qx_adc.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_bkp.c 0x00000000   Number         0  mdr32f9qx_bkp.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_can.c 0x00000000   Number         0  mdr32f9qx_can.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_comp.c 0x00000000   Number         0  mdr32f9qx_comp.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_dac.c 0x00000000   Number         0  mdr32f9qx_dac.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_dma.c 0x00000000   Number         0  mdr32f9qx_dma.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_ebc.c 0x00000000   Number         0  mdr32f9qx_ebc.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_eeprom.c 0x00000000   Number         0  mdr32f9qx_eeprom.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_i2c.c 0x00000000   Number         0  mdr32f9qx_i2c.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_iwdg.c 0x00000000   Number         0  mdr32f9qx_iwdg.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_port.c 0x00000000   Number         0  mdr32f9qx_port.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_power.c 0x00000000   Number         0  mdr32f9qx_power.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_rst_clk.c 0x00000000   Number         0  mdr32f9qx_rst_clk.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_ssp.c 0x00000000   Number         0  mdr32f9qx_ssp.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_timer.c 0x00000000   Number         0  mdr32f9qx_timer.o ABSOLUTE
+    C:\Keil_v5\ARM\PACK\Keil\MDR1986BExx\2.0.3\Libraries\SPL\MDR32Fx\src\MDR32F9Qx_uart.c 0x00000000   Number         0  mdr32f9qx_uart.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_adc.c 0x00000000   Number         0  mdr32f9qx_adc.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_bkp.c 0x00000000   Number         0  mdr32f9qx_bkp.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_can.c 0x00000000   Number         0  mdr32f9qx_can.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_comp.c 0x00000000   Number         0  mdr32f9qx_comp.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_dac.c 0x00000000   Number         0  mdr32f9qx_dac.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_dma.c 0x00000000   Number         0  mdr32f9qx_dma.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_ebc.c 0x00000000   Number         0  mdr32f9qx_ebc.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_eeprom.c 0x00000000   Number         0  mdr32f9qx_eeprom.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_i2c.c 0x00000000   Number         0  mdr32f9qx_i2c.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_iwdg.c 0x00000000   Number         0  mdr32f9qx_iwdg.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_port.c 0x00000000   Number         0  mdr32f9qx_port.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_power.c 0x00000000   Number         0  mdr32f9qx_power.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_rst_clk.c 0x00000000   Number         0  mdr32f9qx_rst_clk.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_ssp.c 0x00000000   Number         0  mdr32f9qx_ssp.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_timer.c 0x00000000   Number         0  mdr32f9qx_timer.o ABSOLUTE
+    C:\\Keil_v5\\ARM\\PACK\\Keil\\MDR1986BExx\\2.0.3\\Libraries\\SPL\\MDR32Fx\\src\\MDR32F9Qx_uart.c 0x00000000   Number         0  mdr32f9qx_uart.o ABSOLUTE
+    RTE\Device\MDR1986BE91\startup_MDR32F9Qx.S 0x00000000   Number         0  startup_mdr32f9qx.o ABSOLUTE
+    RTE\Device\MDR1986BE91\system_MDR32F9Qx.c 0x00000000   Number         0  system_mdr32f9qx.o ABSOLUTE
+    RTE\\Device\\MDR1986BE91\\system_MDR32F9Qx.c 0x00000000   Number         0  system_mdr32f9qx.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    RESET                                    0x08000000   Section      192  startup_mdr32f9qx.o(RESET)
+    !!!main                                  0x080000c0   Section        8  __main.o(!!!main)
+    !!!scatter                               0x080000c8   Section       52  __scatter.o(!!!scatter)
+    !!dclz77c                                0x080000fc   Section      100  __dclz77c.o(!!dclz77c)
+    !!handler_zi                             0x08000160   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x0800017c   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x0800017e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x0800017e   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$libshutdown$$00000000      0x08000180   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x08000182   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x08000182   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x08000184   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x08000184   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x08000184   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x0800018a   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0800018a   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x0800018e   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x0800018e   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x08000196   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x08000198   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x08000198   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x0800019c   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x080001a4   Section       64  startup_mdr32f9qx.o(.text)
+    .text                                    0x080001e4   Section      100  rt_memcpy_w.o(.text)
+    .text                                    0x08000248   Section       78  rt_memclr_w.o(.text)
+    .text                                    0x08000296   Section        0  heapauxi.o(.text)
+    .text                                    0x0800029c   Section       74  sys_stackheap_outer.o(.text)
+    .text                                    0x080002e6   Section        0  exit.o(.text)
+    .text                                    0x080002f8   Section        8  libspace.o(.text)
+    .text                                    0x08000300   Section        0  sys_exit.o(.text)
+    .text                                    0x0800030c   Section        2  use_no_semi.o(.text)
+    .text                                    0x0800030e   Section        0  indicate_semi.o(.text)
+    i.InitLcd                                0x08000310   Section        0  main.o(i.InitLcd)
+    i.LCDON                                  0x08000378   Section        0  main.o(i.LCDON)
+    i.ReadCMD                                0x080003a4   Section        0  main.o(i.ReadCMD)
+    i.ScreenUpdate                           0x080003e4   Section        0  main.o(i.ScreenUpdate)
+    i.Send_Data                              0x0800047c   Section        0  main.o(i.Send_Data)
+    i.SetAddr                                0x080004c4   Section        0  main.o(i.SetAddr)
+    i.SetPage                                0x080004ec   Section        0  main.o(i.SetPage)
+    i.StartScreen                            0x08000510   Section        0  main.o(i.StartScreen)
+    i.SystemCoreClockUpdate                  0x08000528   Section        0  system_mdr32f9qx.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x080005b8   Section        0  system_mdr32f9qx.o(i.SystemInit)
+    i.Timer1_IRQHandler                      0x080005e0   Section        0  main.o(i.Timer1_IRQHandler)
+    i.Timer2_IRQHandler                      0x080007b0   Section        0  main.o(i.Timer2_IRQHandler)
+    i.Timer3_IRQHandler                      0x080007e4   Section        0  main.o(i.Timer3_IRQHandler)
+    i.WriteCMD                               0x08000864   Section        0  main.o(i.WriteCMD)
+    i.checkLevel                             0x080008a4   Section        0  main.o(i.checkLevel)
+    i.checkTetris                            0x08000a24   Section        0  main.o(i.checkTetris)
+    i.clearPrimitive                         0x08000ab0   Section        0  main.o(i.clearPrimitive)
+    i.clearScuare                            0x08000adc   Section        0  main.o(i.clearScuare)
+    i.clear_array                            0x08000b42   Section        0  main.o(i.clear_array)
+    i.clear_lcd                              0x08000b68   Section        0  main.o(i.clear_lcd)
+    i.deleteLines                            0x08000b9a   Section        0  main.o(i.deleteLines)
+    i.drawGameField                          0x08000c44   Section        0  main.o(i.drawGameField)
+    i.drawNum                                0x08000ca4   Section        0  main.o(i.drawNum)
+    i.drawOneFig                             0x08000cdc   Section        0  main.o(i.drawOneFig)
+    i.drawPrimitive                          0x08000d78   Section        0  main.o(i.drawPrimitive)
+    i.drawScuare                             0x08000dae   Section        0  main.o(i.drawScuare)
+    i.generateFigure                         0x08000e14   Section        0  main.o(i.generateFigure)
+    i.initButtons                            0x08000ea4   Section        0  main.o(i.initButtons)
+    i.initFigure_coord                       0x08000ff8   Section        0  main.o(i.initFigure_coord)
+    i.initFigure_model                       0x08000ffe   Section        0  main.o(i.initFigure_model)
+    i.initPerefirial                         0x08001068   Section        0  main.o(i.initPerefirial)
+    i.initTimer_1                            0x0800117c   Section        0  main.o(i.initTimer_1)
+    i.initTimer_2                            0x080011cc   Section        0  main.o(i.initTimer_2)
+    i.initTimer_3                            0x08001214   Section        0  main.o(i.initTimer_3)
+    i.isCollision                            0x08001264   Section        0  main.o(i.isCollision)
+    i.levelToFreq                            0x080012d6   Section        0  main.o(i.levelToFreq)
+    i.main                                   0x0800134c   Section        0  main.o(i.main)
+    i.max                                    0x08001fb0   Section        0  main.o(i.max)
+    i.maxRight                               0x08001fbe   Section        0  main.o(i.maxRight)
+    i.maxTop                                 0x08001fee   Section        0  main.o(i.maxTop)
+    i.min                                    0x0800201c   Section        0  main.o(i.min)
+    i.minBottom                              0x0800202a   Section        0  main.o(i.minBottom)
+    i.minLeft                                0x0800205e   Section        0  main.o(i.minLeft)
+    i.mixLayer                               0x0800208e   Section        0  main.o(i.mixLayer)
+    i.movDown                                0x080020ca   Section        0  main.o(i.movDown)
+    i.movLeft                                0x08002100   Section        0  main.o(i.movLeft)
+    i.movRight                               0x08002130   Section        0  main.o(i.movRight)
+    i.movRotate                              0x08002160   Section        0  main.o(i.movRotate)
+    i.picToArray_full                        0x08002204   Section        0  main.o(i.picToArray_full)
+    i.picToArray_half                        0x080022a0   Section        0  main.o(i.picToArray_half)
+    i.placeFigure                            0x08002344   Section        0  main.o(i.placeFigure)
+    i.rotateArray_ACW                        0x080023a8   Section        0  main.o(i.rotateArray_ACW)
+    i.rotateArray_CW                         0x0800243a   Section        0  main.o(i.rotateArray_CW)
+    i.saveFigure                             0x080024cc   Section        0  main.o(i.saveFigure)
+    i.showLevel                              0x08002514   Section        0  main.o(i.showLevel)
+    i.showLines                              0x08002680   Section        0  main.o(i.showLines)
+    i.showScore                              0x08002818   Section        0  main.o(i.showScore)
+    i.timer1Off                              0x080029d4   Section        0  main.o(i.timer1Off)
+    i.timer3Off                              0x080029f0   Section        0  main.o(i.timer3Off)
+    .data                                    0x20000000   Section     4752  main.o(.data)
+    .data                                    0x20001290   Section        4  system_mdr32f9qx.o(.data)
+    .bss                                     0x20001294   Section     8964  main.o(.bss)
+    .bss                                     0x20003598   Section       96  libspace.o(.bss)
+    HEAP                                     0x200035f8   Section      512  startup_mdr32f9qx.o(HEAP)
+    Heap_Mem                                 0x200035f8   Data         512  startup_mdr32f9qx.o(HEAP)
+    STACK                                    0x200037f8   Section     1024  startup_mdr32f9qx.o(STACK)
+    Stack_Mem                                0x200037f8   Data        1024  startup_mdr32f9qx.o(STACK)
+    __initial_sp                             0x20003bf8   Data           0  startup_mdr32f9qx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_mdr32f9qx.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_mdr32f9qx.o(RESET)
+    __Vectors_End                            0x080000c0   Data           0  startup_mdr32f9qx.o(RESET)
+    __main                                   0x080000c1   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x080000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x080000c9   Thumb Code    44  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x080000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x080000d7   Thumb Code     0  __scatter.o(!!!scatter)
+    __decompress                             0x080000fd   Thumb Code   100  __dclz77c.o(!!dclz77c)
+    __decompress2                            0x080000fd   Thumb Code     0  __dclz77c.o(!!dclz77c)
+    __scatterload_zeroinit                   0x08000161   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x0800017d   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_1                       0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x0800017f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_shutdown                        0x08000181   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x08000183   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x08000185   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x08000185   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x08000185   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x0800018b   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0800018b   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x0800018f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x0800018f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x08000197   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x08000199   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x08000199   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x0800019d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x080001a5   Thumb Code     8  startup_mdr32f9qx.o(.text)
+    NMI_Handler                              0x080001ad   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    HardFault_Handler                        0x080001af   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    MemManage_Handler                        0x080001b1   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    BusFault_Handler                         0x080001b3   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    UsageFault_Handler                       0x080001b5   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    SVC_Handler                              0x080001b7   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    DebugMon_Handler                         0x080001b9   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    PendSV_Handler                           0x080001bb   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    SysTick_Handler                          0x080001bd   Thumb Code     2  startup_mdr32f9qx.o(.text)
+    ADC_IRQHandler                           0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    BACKUP_IRQHandler                        0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    CAN1_IRQHandler                          0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    CAN2_IRQHandler                          0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    COMPARATOR_IRQHandler                    0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    DMA_IRQHandler                           0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    EXT_INT1_IRQHandler                      0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    EXT_INT2_IRQHandler                      0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    EXT_INT3_IRQHandler                      0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    EXT_INT4_IRQHandler                      0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    I2C_IRQHandler                           0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    POWER_IRQHandler                         0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    SSP1_IRQHandler                          0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    SSP2_IRQHandler                          0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    UART1_IRQHandler                         0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    UART2_IRQHandler                         0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    USB_IRQHandler                           0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    WWDG_IRQHandler                          0x080001bf   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    __user_initial_stackheap                 0x080001c1   Thumb Code     0  startup_mdr32f9qx.o(.text)
+    __aeabi_memcpy4                          0x080001e5   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memcpy8                          0x080001e5   Thumb Code     0  rt_memcpy_w.o(.text)
+    __rt_memcpy_w                            0x080001e5   Thumb Code   100  rt_memcpy_w.o(.text)
+    _memcpy_lastbytes_aligned                0x0800022d   Thumb Code     0  rt_memcpy_w.o(.text)
+    __aeabi_memclr4                          0x08000249   Thumb Code     0  rt_memclr_w.o(.text)
+    __aeabi_memclr8                          0x08000249   Thumb Code     0  rt_memclr_w.o(.text)
+    __rt_memclr_w                            0x08000249   Thumb Code    78  rt_memclr_w.o(.text)
+    _memset_w                                0x0800024d   Thumb Code     0  rt_memclr_w.o(.text)
+    __use_two_region_memory                  0x08000297   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x08000299   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x0800029b   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x0800029d   Thumb Code    74  sys_stackheap_outer.o(.text)
+    exit                                     0x080002e7   Thumb Code    18  exit.o(.text)
+    __user_libspace                          0x080002f9   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x080002f9   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x080002f9   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x08000301   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x0800030d   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x0800030d   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0800030f   Thumb Code     0  indicate_semi.o(.text)
+    InitLcd                                  0x08000311   Thumb Code    94  main.o(i.InitLcd)
+    LCDON                                    0x08000379   Thumb Code    42  main.o(i.LCDON)
+    ReadCMD                                  0x080003a5   Thumb Code    56  main.o(i.ReadCMD)
+    ScreenUpdate                             0x080003e5   Thumb Code   150  main.o(i.ScreenUpdate)
+    Send_Data                                0x0800047d   Thumb Code    64  main.o(i.Send_Data)
+    SetAddr                                  0x080004c5   Thumb Code    40  main.o(i.SetAddr)
+    SetPage                                  0x080004ed   Thumb Code    36  main.o(i.SetPage)
+    StartScreen                              0x08000511   Thumb Code    22  main.o(i.StartScreen)
+    SystemCoreClockUpdate                    0x08000529   Thumb Code   130  system_mdr32f9qx.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x080005b9   Thumb Code    36  system_mdr32f9qx.o(i.SystemInit)
+    Timer1_IRQHandler                        0x080005e1   Thumb Code   372  main.o(i.Timer1_IRQHandler)
+    Timer2_IRQHandler                        0x080007b1   Thumb Code    44  main.o(i.Timer2_IRQHandler)
+    Timer3_IRQHandler                        0x080007e5   Thumb Code   100  main.o(i.Timer3_IRQHandler)
+    WriteCMD                                 0x08000865   Thumb Code    54  main.o(i.WriteCMD)
+    checkLevel                               0x080008a5   Thumb Code   376  main.o(i.checkLevel)
+    checkTetris                              0x08000a25   Thumb Code   136  main.o(i.checkTetris)
+    clearPrimitive                           0x08000ab1   Thumb Code    44  main.o(i.clearPrimitive)
+    clearScuare                              0x08000add   Thumb Code   102  main.o(i.clearScuare)
+    clear_array                              0x08000b43   Thumb Code    38  main.o(i.clear_array)
+    clear_lcd                                0x08000b69   Thumb Code    50  main.o(i.clear_lcd)
+    deleteLines                              0x08000b9b   Thumb Code   170  main.o(i.deleteLines)
+    drawGameField                            0x08000c45   Thumb Code    92  main.o(i.drawGameField)
+    drawNum                                  0x08000ca5   Thumb Code    54  main.o(i.drawNum)
+    drawOneFig                               0x08000cdd   Thumb Code   150  main.o(i.drawOneFig)
+    drawPrimitive                            0x08000d79   Thumb Code    54  main.o(i.drawPrimitive)
+    drawScuare                               0x08000daf   Thumb Code   102  main.o(i.drawScuare)
+    generateFigure                           0x08000e15   Thumb Code   110  main.o(i.generateFigure)
+    initButtons                              0x08000ea5   Thumb Code   332  main.o(i.initButtons)
+    initFigure_coord                         0x08000ff9   Thumb Code     6  main.o(i.initFigure_coord)
+    initFigure_model                         0x08000fff   Thumb Code   104  main.o(i.initFigure_model)
+    initPerefirial                           0x08001069   Thumb Code   248  main.o(i.initPerefirial)
+    initTimer_1                              0x0800117d   Thumb Code    66  main.o(i.initTimer_1)
+    initTimer_2                              0x080011cd   Thumb Code    58  main.o(i.initTimer_2)
+    initTimer_3                              0x08001215   Thumb Code    66  main.o(i.initTimer_3)
+    isCollision                              0x08001265   Thumb Code   114  main.o(i.isCollision)
+    levelToFreq                              0x080012d7   Thumb Code   116  main.o(i.levelToFreq)
+    main                                     0x0800134d   Thumb Code  3070  main.o(i.main)
+    max                                      0x08001fb1   Thumb Code    14  main.o(i.max)
+    maxRight                                 0x08001fbf   Thumb Code    48  main.o(i.maxRight)
+    maxTop                                   0x08001fef   Thumb Code    46  main.o(i.maxTop)
+    min                                      0x0800201d   Thumb Code    14  main.o(i.min)
+    minBottom                                0x0800202b   Thumb Code    52  main.o(i.minBottom)
+    minLeft                                  0x0800205f   Thumb Code    48  main.o(i.minLeft)
+    mixLayer                                 0x0800208f   Thumb Code    60  main.o(i.mixLayer)
+    movDown                                  0x080020cb   Thumb Code    54  main.o(i.movDown)
+    movLeft                                  0x08002101   Thumb Code    48  main.o(i.movLeft)
+    movRight                                 0x08002131   Thumb Code    48  main.o(i.movRight)
+    movRotate                                0x08002161   Thumb Code   164  main.o(i.movRotate)
+    picToArray_full                          0x08002205   Thumb Code   156  main.o(i.picToArray_full)
+    picToArray_half                          0x080022a1   Thumb Code   164  main.o(i.picToArray_half)
+    placeFigure                              0x08002345   Thumb Code   100  main.o(i.placeFigure)
+    rotateArray_ACW                          0x080023a9   Thumb Code   146  main.o(i.rotateArray_ACW)
+    rotateArray_CW                           0x0800243b   Thumb Code   146  main.o(i.rotateArray_CW)
+    saveFigure                               0x080024cd   Thumb Code    72  main.o(i.saveFigure)
+    showLevel                                0x08002515   Thumb Code   324  main.o(i.showLevel)
+    showLines                                0x08002681   Thumb Code   366  main.o(i.showLines)
+    showScore                                0x08002819   Thumb Code   398  main.o(i.showScore)
+    timer1Off                                0x080029d5   Thumb Code    24  main.o(i.timer1Off)
+    timer3Off                                0x080029f1   Thumb Code    24  main.o(i.timer3Off)
+    Region$$Table$$Base                      0x08002a0c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002a2c   Number         0  anon$$obj.o(Region$$Table)
+    num_0                                    0x20000000   Data          15  main.o(.data)
+    num_1                                    0x2000000f   Data          15  main.o(.data)
+    num_2                                    0x2000001e   Data          15  main.o(.data)
+    num_3                                    0x2000002d   Data          15  main.o(.data)
+    num_4                                    0x2000003c   Data          15  main.o(.data)
+    num_5                                    0x2000004b   Data          15  main.o(.data)
+    num_6                                    0x2000005a   Data          15  main.o(.data)
+    num_7                                    0x20000069   Data          15  main.o(.data)
+    num_8                                    0x20000078   Data          15  main.o(.data)
+    num_9                                    0x20000087   Data          15  main.o(.data)
+    primitive                                0x20000096   Data          25  main.o(.data)
+    primitive_1                              0x200000af   Data          25  main.o(.data)
+    primitive_2                              0x200000c8   Data          25  main.o(.data)
+    primitive_3                              0x200000e1   Data          25  main.o(.data)
+    primitive_4                              0x200000fa   Data          25  main.o(.data)
+    fig_J                                    0x20000113   Data          16  main.o(.data)
+    fig_I                                    0x20000123   Data          16  main.o(.data)
+    fig_O                                    0x20000133   Data          16  main.o(.data)
+    fig_L                                    0x20000143   Data          16  main.o(.data)
+    fig_Z                                    0x20000153   Data          16  main.o(.data)
+    fig_T                                    0x20000163   Data          16  main.o(.data)
+    fig_S                                    0x20000173   Data          16  main.o(.data)
+    startscreen_1                            0x20000183   Data         512  main.o(.data)
+    startscreen_2                            0x20000383   Data         640  main.o(.data)
+    gamegorund                               0x20000603   Data         630  main.o(.data)
+    start_logo                               0x20000879   Data          90  main.o(.data)
+    options_logo                             0x200008d3   Data          90  main.o(.data)
+    settings_logo                            0x2000092d   Data          90  main.o(.data)
+    them_logo                                0x20000987   Data          90  main.o(.data)
+    level_logo                               0x200009e1   Data          90  main.o(.data)
+    back_logo                                0x20000a3b   Data          90  main.o(.data)
+    gameover                                 0x20000a95   Data         344  main.o(.data)
+    tetris_logo                              0x20000bed   Data         512  main.o(.data)
+    movement                                 0x20000ded   Data        1024  main.o(.data)
+    control_logo                             0x200011ed   Data          90  main.o(.data)
+    gameIsOn                                 0x20001247   Data           1  main.o(.data)
+    theme_WB                                 0x20001248   Data           4  main.o(.data)
+    score123                                 0x2000124c   Data           4  main.o(.data)
+    lines123                                 0x20001250   Data           4  main.o(.data)
+    levell23                                 0x20001254   Data           4  main.o(.data)
+    startlevell23                            0x20001258   Data           4  main.o(.data)
+    drop_flag                                0x2000125c   Data           4  main.o(.data)
+    speed123                                 0x20001260   Data           4  main.o(.data)
+    gameStatus                               0x20001264   Data           4  main.o(.data)
+    status_button_UP                         0x20001268   Data           4  main.o(.data)
+    status_button_DOWN                       0x2000126c   Data           4  main.o(.data)
+    status_button_CENTER                     0x20001270   Data           4  main.o(.data)
+    status_button_LEFT                       0x20001274   Data           4  main.o(.data)
+    status_button_RIGHT                      0x20001278   Data           4  main.o(.data)
+    button_CENTER_pressed_cnt                0x2000127c   Data           4  main.o(.data)
+    button_DOWN_pressed_cnt                  0x20001280   Data           4  main.o(.data)
+    button_UP_pressed_cnt                    0x20001284   Data           4  main.o(.data)
+    button_RIGHT_pressed_cnt                 0x20001288   Data           4  main.o(.data)
+    button_LEFT_pressed_cnt                  0x2000128c   Data           4  main.o(.data)
+    SystemCoreClock                          0x20001290   Data           4  system_mdr32f9qx.o(.data)
+    fig_CLR                                  0x20001294   Data          16  main.o(.bss)
+    screen                                   0x200012a4   Data        8192  main.o(.bss)
+    staticLayer                              0x200032a4   Data         200  main.o(.bss)
+    dynamicLayer                             0x2000336c   Data         200  main.o(.bss)
+    mixedLayer                               0x20003434   Data         200  main.o(.bss)
+    ActiveFig                                0x200034fc   Data          52  main.o(.bss)
+    NextFig                                  0x20003530   Data          52  main.o(.bss)
+    TEST                                     0x20003564   Data          52  main.o(.bss)
+    __libspace_start                         0x20003598   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x200035f8   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080001a5
+
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00003cc0, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x00003114])
+
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002a2c, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000c0   Data   RO          469    RESET               startup_mdr32f9qx.o
+    0x080000c0   0x080000c0   0x00000008   Code   RO         2750  * !!!main             c_w.l(__main.o)
+    0x080000c8   0x080000c8   0x00000034   Code   RO         2909    !!!scatter          c_w.l(__scatter.o)
+    0x080000fc   0x080000fc   0x00000064   Code   RO         2907    !!dclz77c           c_w.l(__dclz77c.o)
+    0x08000160   0x08000160   0x0000001c   Code   RO         2911    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x0800017c   0x0800017c   0x00000002   Code   RO         2777    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2784    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2786    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2789    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2791    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2793    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2796    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2798    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2800    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2802    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2804    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2806    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2808    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2810    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2812    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2814    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2816    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2820    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2822    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2824    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000000   Code   RO         2826    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x0800017e   0x0800017e   0x00000002   Code   RO         2827    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x08000180   0x08000180   0x00000002   Code   RO         2847    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2860    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2862    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2865    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2868    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2870    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000000   Code   RO         2873    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x08000182   0x08000182   0x00000002   Code   RO         2874    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x08000184   0x08000184   0x00000000   Code   RO         2752    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x08000184   0x08000184   0x00000000   Code   RO         2754    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x08000184   0x08000184   0x00000006   Code   RO         2766    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x0800018a   0x0800018a   0x00000000   Code   RO         2756    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x0800018a   0x0800018a   0x00000004   Code   RO         2757    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x0800018e   0x0800018e   0x00000000   Code   RO         2759    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x0800018e   0x0800018e   0x00000008   Code   RO         2760    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x08000196   0x08000196   0x00000002   Code   RO         2781    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000198   0x08000198   0x00000000   Code   RO         2829    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         2830    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x0800019c   0x0800019c   0x00000006   Code   RO         2831    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x080001a2   0x080001a2   0x00000002   PAD
+    0x080001a4   0x080001a4   0x00000040   Code   RO          470  * .text               startup_mdr32f9qx.o
+    0x080001e4   0x080001e4   0x00000064   Code   RO         2744    .text               c_w.l(rt_memcpy_w.o)
+    0x08000248   0x08000248   0x0000004e   Code   RO         2746    .text               c_w.l(rt_memclr_w.o)
+    0x08000296   0x08000296   0x00000006   Code   RO         2748    .text               c_w.l(heapauxi.o)
+    0x0800029c   0x0800029c   0x0000004a   Code   RO         2768    .text               c_w.l(sys_stackheap_outer.o)
+    0x080002e6   0x080002e6   0x00000012   Code   RO         2770    .text               c_w.l(exit.o)
+    0x080002f8   0x080002f8   0x00000008   Code   RO         2778    .text               c_w.l(libspace.o)
+    0x08000300   0x08000300   0x0000000c   Code   RO         2839    .text               c_w.l(sys_exit.o)
+    0x0800030c   0x0800030c   0x00000002   Code   RO         2850    .text               c_w.l(use_no_semi.o)
+    0x0800030e   0x0800030e   0x00000000   Code   RO         2852    .text               c_w.l(indicate_semi.o)
+    0x0800030e   0x0800030e   0x00000002   PAD
+    0x08000310   0x08000310   0x00000068   Code   RO            4    i.InitLcd           main.o
+    0x08000378   0x08000378   0x0000002a   Code   RO            5    i.LCDON             main.o
+    0x080003a2   0x080003a2   0x00000002   PAD
+    0x080003a4   0x080003a4   0x00000040   Code   RO            6    i.ReadCMD           main.o
+    0x080003e4   0x080003e4   0x00000096   Code   RO            7    i.ScreenUpdate      main.o
+    0x0800047a   0x0800047a   0x00000002   PAD
+    0x0800047c   0x0800047c   0x00000048   Code   RO            8    i.Send_Data         main.o
+    0x080004c4   0x080004c4   0x00000028   Code   RO            9    i.SetAddr           main.o
+    0x080004ec   0x080004ec   0x00000024   Code   RO           10    i.SetPage           main.o
+    0x08000510   0x08000510   0x00000016   Code   RO           11    i.StartScreen       main.o
+    0x08000526   0x08000526   0x00000002   PAD
+    0x08000528   0x08000528   0x00000090   Code   RO          477    i.SystemCoreClockUpdate  system_mdr32f9qx.o
+    0x080005b8   0x080005b8   0x00000028   Code   RO          478    i.SystemInit        system_mdr32f9qx.o
+    0x080005e0   0x080005e0   0x000001d0   Code   RO           12    i.Timer1_IRQHandler  main.o
+    0x080007b0   0x080007b0   0x00000034   Code   RO           13    i.Timer2_IRQHandler  main.o
+    0x080007e4   0x080007e4   0x00000080   Code   RO           14    i.Timer3_IRQHandler  main.o
+    0x08000864   0x08000864   0x00000040   Code   RO           15    i.WriteCMD          main.o
+    0x080008a4   0x080008a4   0x00000180   Code   RO           17    i.checkLevel        main.o
+    0x08000a24   0x08000a24   0x0000008c   Code   RO           19    i.checkTetris       main.o
+    0x08000ab0   0x08000ab0   0x0000002c   Code   RO           21    i.clearPrimitive    main.o
+    0x08000adc   0x08000adc   0x00000066   Code   RO           22    i.clearScuare       main.o
+    0x08000b42   0x08000b42   0x00000026   Code   RO           23    i.clear_array       main.o
+    0x08000b68   0x08000b68   0x00000032   Code   RO           24    i.clear_lcd         main.o
+    0x08000b9a   0x08000b9a   0x000000aa   Code   RO           26    i.deleteLines       main.o
+    0x08000c44   0x08000c44   0x00000060   Code   RO           27    i.drawGameField     main.o
+    0x08000ca4   0x08000ca4   0x00000036   Code   RO           28    i.drawNum           main.o
+    0x08000cda   0x08000cda   0x00000002   PAD
+    0x08000cdc   0x08000cdc   0x0000009c   Code   RO           29    i.drawOneFig        main.o
+    0x08000d78   0x08000d78   0x00000036   Code   RO           30    i.drawPrimitive     main.o
+    0x08000dae   0x08000dae   0x00000066   Code   RO           31    i.drawScuare        main.o
+    0x08000e14   0x08000e14   0x00000090   Code   RO           34    i.generateFigure    main.o
+    0x08000ea4   0x08000ea4   0x00000154   Code   RO           35    i.initButtons       main.o
+    0x08000ff8   0x08000ff8   0x00000006   Code   RO           36    i.initFigure_coord  main.o
+    0x08000ffe   0x08000ffe   0x00000068   Code   RO           37    i.initFigure_model  main.o
+    0x08001066   0x08001066   0x00000002   PAD
+    0x08001068   0x08001068   0x00000114   Code   RO           38    i.initPerefirial    main.o
+    0x0800117c   0x0800117c   0x00000050   Code   RO           39    i.initTimer_1       main.o
+    0x080011cc   0x080011cc   0x00000048   Code   RO           40    i.initTimer_2       main.o
+    0x08001214   0x08001214   0x00000050   Code   RO           41    i.initTimer_3       main.o
+    0x08001264   0x08001264   0x00000072   Code   RO           42    i.isCollision       main.o
+    0x080012d6   0x080012d6   0x00000074   Code   RO           43    i.levelToFreq       main.o
+    0x0800134a   0x0800134a   0x00000002   PAD
+    0x0800134c   0x0800134c   0x00000c64   Code   RO           45    i.main              main.o
+    0x08001fb0   0x08001fb0   0x0000000e   Code   RO           46    i.max               main.o
+    0x08001fbe   0x08001fbe   0x00000030   Code   RO           47    i.maxRight          main.o
+    0x08001fee   0x08001fee   0x0000002e   Code   RO           48    i.maxTop            main.o
+    0x0800201c   0x0800201c   0x0000000e   Code   RO           49    i.min               main.o
+    0x0800202a   0x0800202a   0x00000034   Code   RO           50    i.minBottom         main.o
+    0x0800205e   0x0800205e   0x00000030   Code   RO           51    i.minLeft           main.o
+    0x0800208e   0x0800208e   0x0000003c   Code   RO           52    i.mixLayer          main.o
+    0x080020ca   0x080020ca   0x00000036   Code   RO           53    i.movDown           main.o
+    0x08002100   0x08002100   0x00000030   Code   RO           54    i.movLeft           main.o
+    0x08002130   0x08002130   0x00000030   Code   RO           55    i.movRight          main.o
+    0x08002160   0x08002160   0x000000a4   Code   RO           56    i.movRotate         main.o
+    0x08002204   0x08002204   0x0000009c   Code   RO           57    i.picToArray_full   main.o
+    0x080022a0   0x080022a0   0x000000a4   Code   RO           58    i.picToArray_half   main.o
+    0x08002344   0x08002344   0x00000064   Code   RO           59    i.placeFigure       main.o
+    0x080023a8   0x080023a8   0x00000092   Code   RO           60    i.rotateArray_ACW   main.o
+    0x0800243a   0x0800243a   0x00000092   Code   RO           61    i.rotateArray_CW    main.o
+    0x080024cc   0x080024cc   0x00000048   Code   RO           62    i.saveFigure        main.o
+    0x08002514   0x08002514   0x0000016c   Code   RO           63    i.showLevel         main.o
+    0x08002680   0x08002680   0x00000198   Code   RO           64    i.showLines         main.o
+    0x08002818   0x08002818   0x000001bc   Code   RO           65    i.showScore         main.o
+    0x080029d4   0x080029d4   0x0000001c   Code   RO           68    i.timer1Off         main.o
+    0x080029f0   0x080029f0   0x0000001c   Code   RO           70    i.timer3Off         main.o
+    0x08002a0c   0x08002a0c   0x00000020   Data   RO         2905    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08002a2c, Size: 0x00001294, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x000006e8])
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   COMPRESSED   0x00001290   Data   RW           72    .data               main.o
+    0x20001290   COMPRESSED   0x00000004   Data   RW          479    .data               system_mdr32f9qx.o
+
+
+    Execution Region ER_ZI (Exec base: 0x20001294, Load base: 0x08003114, Size: 0x00002964, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20001294        -       0x00002304   Zero   RW           71    .bss                main.o
+    0x20003598        -       0x00000060   Zero   RW         2779    .bss                c_w.l(libspace.o)
+    0x200035f8        -       0x00000200   Zero   RW          468    HEAP                startup_mdr32f9qx.o
+    0x200037f8        -       0x00000400   Zero   RW          467    STACK               startup_mdr32f9qx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      9784        730          0       4752       8964      49752   main.o
+        64         26        192          0       1536        812   startup_mdr32f9qx.o
+       184         18          0          4          0       1387   system_mdr32f9qx.o
+
+    ----------------------------------------------------------------------
+     10044        774        224       4756      10500      51951   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        12          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       100          0          0          0          0          0   __dclz77c.o
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        52          8          0          0          0          0   __scatter.o
+        28          0          0          0          0          0   __scatter_zi.o
+        18          0          0          0          0         80   exit.o
+         6          0          0          0          0        152   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+        78          0          0          0          0         80   rt_memclr_w.o
+       100          0          0          0          0         80   rt_memcpy_w.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+        74          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       528         16          0          0         96        744   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       524         16          0          0         96        744   c_w.l
+
+    ----------------------------------------------------------------------
+       528         16          0          0         96        744   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     10572        790        224       4756      10596      49519   Grand Totals
+     10572        790        224       1768      10596      49519   ELF Image Totals (compressed)
+     10572        790        224       1768          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                10796 (  10.54kB)
+    Total RW  Size (RW Data + ZI Data)             15352 (  14.99kB)
+    Total ROM Size (Code + RO Data + RW Data)      12564 (  12.27kB)
+
+==============================================================================
+
